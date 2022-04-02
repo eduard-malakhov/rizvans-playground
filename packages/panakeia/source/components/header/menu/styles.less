@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-grow: 1;
+
+    justify-content: space-between;
+
+    .item {
+        height: 50px;
+
+        font-size: 18px;
+        font-family: "Roboto Slab";
+        color: rgb(49, 53, 62);
+        line-height: 1.333;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        padding: 0 20px;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(221, 75, 43);
+            color: white;
+        }
+    }
+}
