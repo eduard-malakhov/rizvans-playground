@@ -1,0 +1,89 @@
+.newsletter {
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .background {
+        position: absolute;
+        z-index: 0;
+        
+    }
+    .content{
+        z-index: 1;;
+        position: relative;
+        h1 {
+                font-size: 30px;
+                font-family: "Roboto Slab";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.6;
+                text-align: center;
+            
+        }
+        p {
+            font-size: 15px;
+            font-family: "Roboto";
+            color: rgb(255, 255, 255);
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
+
+    form {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.2);
+        // opacity: 0.5;
+        width: 513px;
+        height: 58px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    
+        border-radius: 29px;
+
+        input {
+            height: 100%;
+            background-color: transparent;
+            border: none;
+
+            font-size: 18px;
+            font-family: "Roboto Slab";
+            color: rgb(243, 244, 246);
+            line-height: 1.667;
+            flex-grow: 1;
+            padding: 1px 10px;
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: 18px;
+                font-family: "Roboto Slab";
+                color: rgb(243, 244, 246);
+                line-height: 1.667;
+            }         
+        }
+
+        .sign-up {
+            font-size: 18px;
+            font-family: "Roboto Slab";
+            color: rgb(97, 35, 22);
+            line-height: 1.667;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            flex-shrink: 0; 
+            padding: 0 40px;
+        }
+          
+    }
+
+}
